@@ -1,0 +1,9 @@
+services:
+  website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: my-first-website
+    ports:
+      - "3000:80"
+    restart: unless-stopped
